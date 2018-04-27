@@ -1,4 +1,22 @@
-.header {
-	min-height: 5vh;
-	background-color: purple;
+.container {
+    min-height: 5vh;
+    color: white;
+    background-color: #3987AD;
 }
+
+.link {
+	color: white;
+}
+
+.react-logo {
+	background-image: url('../../../assets/icons/react.svg');
+	background-size: 40px 40px;
+	background-position: 0 center;
+    background-repeat: no-repeat;
+}
+
+.text {
+    text-align: center;
+}
+
+

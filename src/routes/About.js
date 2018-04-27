@@ -8,7 +8,7 @@ export default class About extends Component {
 
 	render() {
 		return (
-			<div>
+			<div className="container">
 				About Route!
 			</div>
 		);

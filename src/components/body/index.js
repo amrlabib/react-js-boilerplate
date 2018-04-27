@@ -6,7 +6,7 @@ import style from './body.scss';
 class Body extends Component {
 	render() {
 		return (
-			<div styleName="body">
+			<div styleName="container">
 				{this.props.children}
 			</div>
 		)
