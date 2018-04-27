@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 import CSSModules from 'react-css-modules';
 import style from './body.scss';
 
@@ -8,7 +9,7 @@ class Body extends Component {
 			<div className="container" styleName="body">
 				<div className="row">
 					<div className="col-sm-4 justify-content-center">
-						<span>first</span>
+						<Link to={`/about/`}>About</Link>
 					</div>
 					<div className="col-sm-4">
 						second
