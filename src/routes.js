@@ -13,13 +13,10 @@ export default class Routes extends Component {
 	render() {
 		return (
 			<Router>
-				<div>
-					<Switch>
-				      <Route exact path='/' component={Home}/>
-				      <Route path='/about' component={About}/>
-				    </Switch>
-				    {this.props.children}
-			    </div>
+				<Switch>
+			      <Route exact path='/' component={Home}/>
+			      <Route exact path='/about' component={About}/>
+			    </Switch>
 			</Router>
 		)
 	}

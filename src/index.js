@@ -6,9 +6,9 @@ import App from './App.js';
 class Main extends Component {
 	render() {
 		return (
-			<Routes>
-				<App />
-			</Routes>
+			<App>
+				<Routes />
+			</App>
 		);
 	}
 }

@@ -6,18 +6,8 @@ import style from './body.scss';
 class Body extends Component {
 	render() {
 		return (
-			<div className="container" styleName="body">
-				<div className="row">
-					<div className="col-sm-4 justify-content-center">
-						<Link to={`/about/`}>About</Link>
-					</div>
-					<div className="col-sm-4">
-						second
-					</div>
-					<div className="col-sm-4">
-						third
-					</div>
-				</div>
+			<div styleName="body">
+				{this.props.children}
 			</div>
 		)
 	}

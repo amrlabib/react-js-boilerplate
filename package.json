@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack -w",
-    "start": "webpack-dev-server",
+    "start:server": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -35,11 +35,13 @@
     "babel-preset-env": "^1.6.1",
     "bootstrap": "^4.1.0",
     "css-loader": "^0.28.11",
+    "express": "^4.16.3",
     "node-sass": "^4.8.3",
     "react": "^16.3.0",
     "react-dom": "^16.3.0",
     "react-router-dom": "^4.2.2",
     "sass-loader": "^6.0.7",
+    "serve-static": "^1.13.2",
     "style-loader": "^0.20.3",
     "uglifyjs-webpack-plugin": "^1.2.4"
   }

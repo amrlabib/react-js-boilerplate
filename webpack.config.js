@@ -76,7 +76,6 @@ module.exports = {
           ]
         }]
     },
-
     plugins: [
         new UglifyJSPlugin(),
         new CopyWebpackPlugin([
@@ -89,10 +88,4 @@ module.exports = {
         }),
         new SpriteLoaderPlugin()
     ],
-
-    devServer: {
-        contentBase: path.join(__dirname, "dist"),
-        compress: true,
-        port: 9000
-    }
 }
