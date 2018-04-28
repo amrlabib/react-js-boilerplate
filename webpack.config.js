@@ -74,7 +74,6 @@ module.exports = {
             {
                 loader: 'svgo-loader',
             }
-            
           ]
         }, {
             test: /\.(png|jpg|gif)$/,
