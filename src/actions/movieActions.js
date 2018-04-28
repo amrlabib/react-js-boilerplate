@@ -29,7 +29,10 @@ function getMoviesThunk() {
 
 		movieApi.getMovies()
 		.then((data) => {
-			dispatch(getMoviesSuccess(data));
+			// setTimeout to show loading state just for testing
+			setTimeout(() => {
+				dispatch(getMoviesSuccess(data));
+			},1000)
 		})
 		.catch((error) => {
 			dispatch(getMoviesFailure(error.message));
