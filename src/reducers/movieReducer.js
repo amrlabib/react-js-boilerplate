@@ -2,6 +2,8 @@ import { MovieTypes } from '../actionTypes';
 
 const INITIAL_STATE = {
 	movies: [],
+	message: '',
+	isLoading: false,
 };
 
 export default function(state = INITIAL_STATE, action ) {
@@ -9,7 +11,20 @@ export default function(state = INITIAL_STATE, action ) {
 		case MovieTypes.MOVIES_GET:
 			return {
 				...state,
-				movies: action.payload,
+				isLoading: true,
+				message: '',
+			}
+		case MovieTypes.MOVIES_GET_SUCCESS:
+			return {
+				...state,
+				isLoading: false,
+				movies: action.movies,
+			}
+		case MovieTypes.MOVIES_GET_FAILURE:
+			return {
+				...state,
+				isLoading: false,
+				message: action.message,
 			}
 		default:
 			return state;

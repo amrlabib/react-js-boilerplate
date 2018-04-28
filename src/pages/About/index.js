@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import reactImage from "../../assets/images/react.png";
+import reactImage from "../../../assets/images/react.png";
 
 export default class About extends Component {
 	constructor(props) {
