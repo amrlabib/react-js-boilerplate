@@ -71,8 +71,10 @@ module.exports = {
                     spriteFilename: '/sprite.svg',
                 }
             },
-            /* 'svg-fill-loader',
-            'svgo-loader'*/
+            {
+                loader: 'svgo-loader',
+            }
+            
           ]
         }, {
             test: /\.(png|jpg|gif)$/,
