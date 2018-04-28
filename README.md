@@ -15,6 +15,7 @@ React js boilerplate is to help you kick start your react web application, with 
 ## Features: 
 
 1. [ES6 Features](http://es6-features.org/#Constants)
+2. [React Redux](https://github.com/reactjs/react-redux) to maintain application store
 2. [React CSS Modules](https://github.com/gajus/react-css-modules) to be able to build modular CSS code for each React component.
 3. [React Router v4](https://github.com/ReactTraining/react-router) for routing between application pages
 4. [Bootstrap v4](https://getbootstrap.com/docs/4.1/layout/overview/) for grid system and all new bootstrap 4 features
@@ -28,7 +29,7 @@ React js boilerplate is to help you kick start your react web application, with 
 Webpack is the only tool used in this project for bundling project dependencies and build, copy files.
 
 #### Loaders:
-1. [babel-loader](https://github.com/babel/babel-loader) with ['es2015', 'react'] presets for ES6 features and React JSX transpilation to ES5 understood by all browsers.
+1. [babel-loader](https://github.com/babel/babel-loader) with ['es2015', 'react', 'stage-1'] presets for ES6 features and React JSX transpilation to ES5 understood by all browsers.
 2. [sass-loader](https://github.com/webpack-contrib/sass-loader) Loads a Sass/SCSS file and compiles it to CSS
 3. [css-loader](https://github.com/webpack-contrib/css-loader) interprets `@import`/`url()` to js modules
 4. [postcss-loader](https://github.com/postcss/postcss-loader) to process CSS with [PostCSS](http://postcss.org/)
