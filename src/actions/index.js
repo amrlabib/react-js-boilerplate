@@ -1,5 +1,5 @@
-import moviesActions from './moviesActions.js';
+import movieActions from './movieActions';
 
-export default = {
-	
-}
+export {
+	movieActions,
+};

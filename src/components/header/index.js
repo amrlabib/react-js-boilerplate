@@ -19,6 +19,9 @@ class Header extends Component {
 								<li>
 									<Link to="/about" styleName="link" >About</Link>
 								</li>
+								<li>
+									<Link to="/movies" styleName="link" >Movies</Link>
+								</li>
 							</ul>
 						</div>
 					</div>
