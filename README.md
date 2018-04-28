@@ -15,7 +15,7 @@ React js boilerplate is to help you kick start your react web application, with 
 ## Features: 
 
 1. [ES6 Features](http://es6-features.org/#Constants)
-2. [React Redux](https://github.com/reactjs/react-redux) to maintain application store
+2. [React Redux](https://github.com/reactjs/react-redux) to maintain application state
 2. [React CSS Modules](https://github.com/gajus/react-css-modules) to be able to build modular CSS code for each React component.
 3. [React Router v4](https://github.com/ReactTraining/react-router) for routing between application pages
 4. [Bootstrap v4](https://getbootstrap.com/docs/4.1/layout/overview/) for grid system and all new bootstrap 4 features
