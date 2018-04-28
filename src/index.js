@@ -6,7 +6,10 @@ import { createStore, applyMiddleware } from 'redux';
 import ReduxThunk from 'redux-thunk';
 import rootReducer from './reducers/';
 import Routes from './routes';
-import App from './App.js';
+import Header from './components/Header';
+import Body from './components/Body';
+import Footer from './components/Footer';
+import style from '../assets/styles/global.scss';
 
 const store = createStore(
   rootReducer,
@@ -18,9 +21,13 @@ class Main extends Component {
 		return (
 			<Provider store={store}>
 				<Router>
-					<App>
-						<Routes />
-					</App>
+					<div>
+						<Header />
+						<Body>
+							<Routes />
+						</Body>
+						<Footer />
+					</div>
 				</Router>
 			</Provider>
 
