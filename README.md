@@ -16,11 +16,14 @@ React js boilerplate is to help you kick start your react web application, with 
 
 1. [ES6 Features](http://es6-features.org/#Constants)
 2. [React Redux](https://github.com/reactjs/react-redux) to maintain application state
-2. [React CSS Modules](https://github.com/gajus/react-css-modules) to be able to build modular CSS code for each React component.
-3. [React Router v4](https://github.com/ReactTraining/react-router) for routing between application pages
-4. [Bootstrap v4](https://getbootstrap.com/docs/4.1/layout/overview/) for grid system and all new bootstrap 4 features
-5. [Svgo](https://github.com/svg/svgo) to make sure all your svg icons are optimized
-6. [Node express based](https://expressjs.com/) development server
+3. [React Thunk](https://github.com/gaearon/redux-thunk) to handle asynchronous actions
+4. [axios](https://github.com/axios/axios) to handle all api calls `['GET','POST','PUT','DELETE', ...]`
+5. [React CSS Modules](https://github.com/gajus/react-css-modules) to be able to build modular CSS code for each React component.
+6. [React Router v4](https://github.com/ReactTraining/react-router) for routing between application pages
+7. [Bootstrap v4](https://getbootstrap.com/docs/4.1/layout/overview/) for grid system and all new bootstrap 4 features
+8. [Svgo](https://github.com/svg/svgo) to make sure all your svg icons are optimized
+9. [Node express based](https://expressjs.com/) development server
+10. [json-server](https://github.com/typicode/json-server) no need to wait for backend api's to start development, use `json-server` to have test data and test api ready for use
 
 ---
 
@@ -29,7 +32,7 @@ React js boilerplate is to help you kick start your react web application, with 
 Webpack is the only tool used in this project for bundling project dependencies and build, copy files.
 
 #### Loaders:
-1. [babel-loader](https://github.com/babel/babel-loader) with ['es2015', 'react', 'stage-1'] presets for ES6 features and React JSX transpilation to ES5 understood by all browsers.
+1. [babel-loader](https://github.com/babel/babel-loader) with `['es2015', 'react', 'stage-1']` presets for ES6 features and React JSX transpilation to ES5 understood by all browsers.
 2. [sass-loader](https://github.com/webpack-contrib/sass-loader) Loads a Sass/SCSS file and compiles it to CSS
 3. [css-loader](https://github.com/webpack-contrib/css-loader) interprets `@import`/`url()` to js modules
 4. [postcss-loader](https://github.com/postcss/postcss-loader) to process CSS with [PostCSS](http://postcss.org/)
