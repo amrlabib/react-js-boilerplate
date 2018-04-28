@@ -74,13 +74,25 @@ module.exports = {
             /* 'svg-fill-loader',
             'svgo-loader'*/
           ]
-        }]
+        }, {
+            test: /\.(png|jpg|gif)$/,
+            use: [
+              {
+                loader: 'url-loader',
+                options: {
+                    limit: 1000,
+                    name: '/images/[name].[ext]',
+                    fallback: 'file-loader'
+                }
+              }
+            ]
+          }
+          ]
     },
     plugins: [
         new UglifyJSPlugin(),
         new CopyWebpackPlugin([
             { from: './index.html', to: './' },
-            { from: './assets/images/*', to: './images/', test: /\.(png|jpg)$/, flatten: true }
         ]),
         new ExtractTextPlugin({
             filename: '/styles/style.css',

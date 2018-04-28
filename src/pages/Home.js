@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 
-export default class About extends Component {
+export default class Home extends Component {
 	constructor(props) {
 		super(props);
 	}
@@ -9,7 +9,7 @@ export default class About extends Component {
 	render() {
 		return (
 			<div className="container">
-				About Route!
+				Home !
 			</div>
 		);
 	}

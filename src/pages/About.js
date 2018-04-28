@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import reactImage from "../../assets/images/react.png";
 
-export default class Home extends Component {
+export default class About extends Component {
 	constructor(props) {
 		super(props);
 	}
@@ -8,7 +9,7 @@ export default class Home extends Component {
 	render() {
 		return (
 			<div className="container">
-				Home Route!
+				<img src={reactImage} width={300}/>
 			</div>
 		);
 	}
