@@ -9,8 +9,8 @@ React js boilerplate is to help you kick start your react web application, with 
 ## Setup:
 
 1. `yarn` or `npm install`
-2. `yarn build:watch` to build all files into `dist` folder
-3. `yarn start` to start node development server
+2. `yarn build:watch` to build all files into `dist` folder and watch for any changes
+3. `yarn start:server` to start node development server and host `dist` folder `http://localhost:8080/`
 
 ## Features: 
 
@@ -19,13 +19,13 @@ React js boilerplate is to help you kick start your react web application, with 
 3. [React Router v4](https://github.com/ReactTraining/react-router) for routing between application pages
 4. [Bootstrap v4](https://getbootstrap.com/docs/4.1/layout/overview/) for grid system and all new bootstrap 4 features
 5. [Svgo](https://github.com/svg/svgo) to make sure all your svg icons are optimized
-6. [Node express](https://expressjs.com/) based development server
+6. [Node express based](https://expressjs.com/) development server
 
 ---
 
-## Webpack: 
+## Bundling/Build using Webpack: 
 
-Webpack is the only tool used in this project for bundling project dependencies and build, copy files, the following loaders are used:
+Webpack is the only tool used in this project for bundling project dependencies and build, copy files.
 
 #### Loaders:
 1. [babel-loader](https://github.com/babel/babel-loader) with ['es2015', 'react'] presets for ES6 features and React JSX transpilation to ES5 understood by all browsers.
