@@ -24,7 +24,7 @@ class Movies extends Component {
 				{isLoading ? <span>Loading...</span> : null }
 				<span styleName="error-message">{message}</span>
 				<ul>
-					{!isLoading && this.renderMovies()}
+					{!isLoading && message.length === 0  && this.renderMovies()}
 				</ul>
 			</div>
 		);
