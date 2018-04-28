@@ -73,8 +73,10 @@ module.exports = {
             },
             {
                 loader: 'svgo-loader',
-            }
-            
+            },
+            {
+                loader: 'svg-fill-loader',
+            },
           ]
         }, {
             test: /\.(png|jpg|gif)$/,
