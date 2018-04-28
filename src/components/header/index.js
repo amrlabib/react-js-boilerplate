@@ -6,15 +6,21 @@ import style from './header.scss';
 class Header extends Component {
 	render() {
 		return (
-			<div className="container-fluid" styleName="container">
-				<div className="row justify-content-center">
-					<div className="col" styleName='react-logo'>
-					</div>
-					<div className="col" styleName='text'>
-						<Link to="/" styleName="link" >Home</Link>
-					</div>
-					<div className="col" styleName='text'>
-						<Link to="/about" styleName="link" >About</Link>
+			<div styleName="container">
+				<div className="container">
+					<div className="row justify-content-center">
+						<div className="col">
+							<ul styleName="nav">
+								<li styleName="react-logo">
+								</li>
+								<li>
+									<Link to="/" styleName="link" >Home</Link>
+								</li>
+								<li>
+									<Link to="/about" styleName="link" >About</Link>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>

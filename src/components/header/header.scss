@@ -6,17 +6,32 @@
 
 .link {
 	color: white;
+	margin-left: 20px;
 }
 
 .react-logo {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
 	background-image: url('../../../assets/icons/react.svg');
-	background-size: 40px 40px;
-	background-position: 0 center;
+	background-size: contain;
+	background-position: center;
     background-repeat: no-repeat;
 }
 
 .text {
     text-align: center;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+	li {
+		float: left;
+	}
 }
 
 
