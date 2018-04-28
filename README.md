@@ -25,7 +25,7 @@ React js boilerplate is to help you kick start your react web application, with 
 
 ## Webpack: 
 
-Webpack is the only tool used in this project for bundling project dependencies and build, copy files, the following loaders are used:
+Webpack is the only tool used in this project for bundling project dependencies and build, copy files.
 
 #### Loaders:
 1. [babel-loader](https://github.com/babel/babel-loader) with ['es2015', 'react'] presets for ES6 features and React JSX transpilation to ES5 understood by all browsers.
