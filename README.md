@@ -10,7 +10,8 @@ React js boilerplate is to help you kick start your react web application, with 
 
 1. `yarn` or `npm install`
 2. `yarn build:watch` to build all files into `dist` folder and watch for any changes
-3. `yarn start:server` to start node development server and host `dist` folder `http://localhost:8080/`
+3. `yarn start:server` to start node development server and host `dist` folder browse `http://localhost:8080/`
+4. `yarn json-server` to create test json api `http://localhost:3001/` 
 
 ## Features: 
 
