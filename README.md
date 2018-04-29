@@ -17,7 +17,7 @@ React js boilerplate is to help you kick start your react web application, with 
 
 1. [ES6 Features](http://es6-features.org/#Constants)
 2. [React Redux](https://github.com/reactjs/react-redux) to maintain application state
-3. [React Thunk](https://github.com/gaearon/redux-thunk) to handle asynchronous actions
+3. [Redux Thunk](https://github.com/gaearon/redux-thunk) to handle asynchronous actions
 4. [axios](https://github.com/axios/axios) to handle all api calls `['GET','POST','PUT','DELETE', ...]`
 5. [React CSS Modules](https://github.com/gajus/react-css-modules) to be able to build modular CSS code for each React component.
 6. [React Router v4](https://github.com/ReactTraining/react-router) for routing between application pages
