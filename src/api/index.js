@@ -1,5 +1,3 @@
 import movieApi from './movieApi';
 
-export {
-	movieApi,
-};
+export { movieApi };

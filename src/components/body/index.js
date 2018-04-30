@@ -1,16 +1,17 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
+import React from 'react';
+import PropTypes from 'prop-types';
 import CSSModules from 'react-css-modules';
 import style from './body.scss';
 
-class Body extends Component {
-	render() {
-		return (
-			<div styleName="container">
-				{this.props.children}
-			</div>
-		)
-	}
-}
+
+const Body = ({ children }) => (
+  <div styleName="container">
+    {children}
+  </div>
+);
+
+Body.propTypes = {
+  children: PropTypes.element.isRequired,
+};
 
 export default CSSModules(Body, style);

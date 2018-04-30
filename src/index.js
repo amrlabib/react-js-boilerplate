@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
@@ -9,31 +9,25 @@ import Routes from './routes';
 import Header from './components/Header';
 import Body from './components/Body';
 import Footer from './components/Footer';
-import style from '../assets/styles/global.scss';
 
 const store = createStore(
   rootReducer,
-  applyMiddleware(ReduxThunk)
+  applyMiddleware(ReduxThunk),
 );
 
-class Main extends Component {
-	render() {
-		return (
-			<Provider store={store}>
-				<Router>
-					<div>
-						<Header />
-						<Body>
-							<Routes />
-						</Body>
-						<Footer />
-					</div>
-				</Router>
-			</Provider>
-
-		);
-	}
-}
+const Main = () => (
+  <Provider store={store}>
+    <Router>
+      <div>
+        <Header />
+        <Body>
+          <Routes />
+        </Body>
+        <Footer />
+      </div>
+    </Router>
+  </Provider>
+);
 
 
-ReactDOM.render( <Main /> , document.querySelector('#app'));
+ReactDOM.render(<Main />, document.querySelector('#app')); //eslint-disable-line

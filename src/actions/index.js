@@ -1,5 +1,3 @@
 import movieActions from './movieActions';
 
-export {
-	movieActions,
-};
+export { movieActions };
