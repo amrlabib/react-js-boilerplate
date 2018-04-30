@@ -24,7 +24,7 @@ React js boilerplate is to help you kick start your react web application, with 
 7. [Bootstrap v4](https://getbootstrap.com/docs/4.1/layout/overview/) for grid system and all new bootstrap 4 features
 8. [Svgo](https://github.com/svg/svgo) to make sure all your svg icons are optimized
 9. [Node express based](https://expressjs.com/) development server
-10. [json-server](https://github.com/typicode/json-server) no need to wait for backend api's to start development, use `json-server` to have test data and test api ready for use
+10. [json-server](https://github.com/typicode/json-server) no need to wait for backend api to start development, use `json-server` to have test data and test api ready for use
 
 ---
 
