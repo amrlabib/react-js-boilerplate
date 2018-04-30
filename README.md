@@ -26,7 +26,7 @@ React js boilerplate is to help you kick start your react web application, with 
 8. [Svgo](https://github.com/svg/svgo) to make sure all your svg icons are optimized
 9. [Node express based](https://expressjs.com/) development server
 10. [json-server](https://github.com/typicode/json-server) no need to wait for backend api to start development, use `json-server` to have test data and test api ready for use
-11. [eslint](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) the project contains eslint with `eslint-config-airbnb` extended, to fix and flag javascript code errors.
+11. [eslint](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) the project contains eslint with `eslint-config-airbnb` extended, to fix and flag javascript code errors, a `pre-commit` hook using [Husky](https://github.com/typicode/husky) will trigger `yarn lint` to make no bad commits
 
 ---
 
