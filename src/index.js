@@ -1,3 +1,5 @@
+// @flow
+
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import ReactDOM from 'react-dom';
@@ -9,7 +11,9 @@ import Routes from './routes';
 import Header from './components/Header';
 import Body from './components/Body';
 import Footer from './components/Footer';
+// $FlowFixMe
 import GlobalStyle from '../assets/styles/global.scss'; //eslint-disable-line
+
 
 const store = createStore(
   rootReducer,
@@ -31,4 +35,9 @@ const Main = () => (
 );
 
 
-ReactDOM.render(<Main />, document.querySelector('#app')); //eslint-disable-line
+const container = document.querySelector('#app');
+if (container) {
+  ReactDOM.render(<Main />, container); //eslint-disable-line
+} else {
+  throw new Error('Error react container HTML element not found!');
+}

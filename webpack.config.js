@@ -1,4 +1,3 @@
-const webpack = require('webpack')
 const path = require('path')
 
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
@@ -26,7 +25,7 @@ module.exports = {
             exclude: /node_modules/,
             loader: 'babel-loader',
             options: {
-                presets: ['env', 'es2015', 'react', 'stage-1']
+                presets: ['env', 'es2015', 'react', 'stage-1', 'flow']
             }
         },{
             test: /\.scss$/,
