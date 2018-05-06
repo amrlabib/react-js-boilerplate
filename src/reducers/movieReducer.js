@@ -1,3 +1,5 @@
+// @flow
+
 import { MovieTypes } from '../actionTypes';
 
 const INITIAL_STATE = {
@@ -6,7 +8,7 @@ const INITIAL_STATE = {
   isLoading: false,
 };
 
-export default function (state = INITIAL_STATE, action) {
+export default function (state: Object = INITIAL_STATE, action: Object) {
   switch (action.type) {
     case MovieTypes.MOVIES_GET:
       return {

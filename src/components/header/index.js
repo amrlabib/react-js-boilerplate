@@ -1,6 +1,9 @@
+// @flow
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import CSSModules from 'react-css-modules';
+// $FlowFixMe
 import style from './header.scss';
 
 const Header = () => (

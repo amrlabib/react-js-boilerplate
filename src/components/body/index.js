@@ -1,17 +1,18 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+// @flow
+
+import * as React from 'react';
 import CSSModules from 'react-css-modules';
+// $FlowFixMe
 import style from './body.scss';
 
+type PropsType = {
+  children: React.Node,
+};
 
-const Body = ({ children }) => (
+const Body = ({ children }: PropsType) => (
   <div styleName="container">
     {children}
   </div>
 );
-
-Body.propTypes = {
-  children: PropTypes.element.isRequired,
-};
 
 export default CSSModules(Body, style);

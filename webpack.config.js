@@ -25,7 +25,12 @@ module.exports = {
             exclude: /node_modules/,
             loader: 'babel-loader',
             options: {
-                presets: ['env', 'es2015', 'react', 'stage-1', 'flow']
+                presets: ['env', 'es2015', 'react', 'stage-1', 'flow'],
+                "env": {
+                  "development": {
+                    "plugins": ["flow-react-proptypes"]
+                  }
+                }
             }
         },{
             test: /\.scss$/,

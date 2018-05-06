@@ -1,3 +1,5 @@
+// @flow
+
 export default {
   MOVIES_GET: 'MOVIES_GET',
   MOVIES_GET_SUCCESS: 'MOVIES_GET_SUCCESS',

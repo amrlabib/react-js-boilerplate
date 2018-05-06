@@ -1,19 +1,21 @@
+// @flow
+
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import CSSModules from 'react-css-modules';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { movieActions } from '../../actions';
+// $FlowFixMe
 import style from './movies.scss';
 
-class Movies extends Component {
-  static propTypes = {
-    getMovies: PropTypes.func.isRequired,
-    movies: PropTypes.arrayOf(PropTypes.object).isRequired,
-    message: PropTypes.string.isRequired,
-    isLoading: PropTypes.bool.isRequired,
-  };
+type PropsType = {
+  getMovies: Function,
+  movies: Array<Object>,
+  message: string,
+  isLoading: boolean,
+};
 
+class Movies extends Component<PropsType> {
   constructor(props) {
     super(props);
     this.props.getMovies();

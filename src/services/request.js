@@ -5,7 +5,7 @@ import config from '../config';
 
 
 class Request {
-  static call(url: string, method: string, reqHeaders: Object, data?: Object) {
+  static call(url: string, method: string, reqHeaders?: Object, data?: Object) {
     const headers = {
       ...config.requestHeaders,
       ...reqHeaders,
@@ -42,19 +42,19 @@ class Request {
       });
   }
 
-  static get(url: string, reqHeader: Object) {
+  static get(url: string, reqHeader?: Object) {
     return Request.call(url, 'GET', reqHeader);
   }
 
-  static post(url: string, reqBody: Object, reqHeader: Object) {
+  static post(url: string, reqBody: Object, reqHeader?: Object) {
     return Request.call(url, 'POST', reqHeader, reqBody);
   }
 
-  static put(url: string, reqBody: Object, reqHeader: Object) {
+  static put(url: string, reqBody: Object, reqHeader?: Object) {
     return Request.call(url, 'PUT', reqHeader, reqBody);
   }
 
-  static delete(url: string, reqHeader: Object) {
+  static delete(url: string, reqHeader?: Object) {
     return Request.call(url, 'DELETE', reqHeader);
   }
 }

@@ -1,3 +1,5 @@
+// @flow
+
 import { MovieTypes } from '../actionTypes';
 import { movieApi } from '../api/';
 
@@ -24,7 +26,7 @@ function getMoviesFailure(message) {
 }
 
 function getMoviesThunk() {
-  return (dispatch) => {
+  return (dispatch: Function) => {
     dispatch(getMovies());
 
     movieApi.getMovies()
