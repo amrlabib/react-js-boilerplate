@@ -11,8 +11,10 @@ React js boilerplate is to help you kick start your react web application, with 
 1. `yarn` or `npm install`
 2. `yarn build:watch` to build all files into `dist` folder and watch for any changes
 3. `yarn start:server` to start node development server and host `dist` folder browse `http://localhost:8080/`
-4. `yarn lint` to run eslint on `src` folder and display code errors if any
 4. `yarn json-server` to create test json api `http://localhost:3001/` 
+5. `yarn lint` to run eslint on `src` folder and display code errors if any
+6. `yarn flow` to run flow
+
 
 ## Features: 
 
@@ -26,7 +28,9 @@ React js boilerplate is to help you kick start your react web application, with 
 8. [Svgo](https://github.com/svg/svgo) to make sure all your svg icons are optimized
 9. [Node express based](https://expressjs.com/) development server
 10. [json-server](https://github.com/typicode/json-server) no need to wait for backend api to start development, use `json-server` to have test data and test api ready for use
-11. [eslint](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) the project contains eslint with `eslint-config-airbnb` extended, to fix and flag javascript code errors, a `pre-commit` hook using [Husky](https://github.com/typicode/husky) will trigger `yarn lint` to make sure no bad commits are pushed
+11. [eslint](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) the project contains eslint with `eslint-config-airbnb` extended, to fix and flag javascript code errors. 
+12. [flow](https://flow.org/en/) static type checker for javascript
+13. [husky](https://github.com/typicode/husky) to add `pre-commit` hook that will trigger `yarn lint && yarn flow` to make sure no bad commits are pushed
 
 ---
 
