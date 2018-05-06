@@ -39,7 +39,7 @@ React js boilerplate is to help you kick start your react web application, with 
 Webpack is the only tool used in this project for bundling project dependencies and build, copy files.
 
 #### Loaders:
-1. [babel-loader](https://github.com/babel/babel-loader) with `['es2015', 'react', 'stage-1']` presets for ES6 features and React JSX transpilation to ES5 understood by all browsers.
+1. [babel-loader](https://github.com/babel/babel-loader) with `['es2015', 'react', 'stage-1', 'flow']` presets for ES6 features and React JSX transpilation to ES5 understood by all browsers.
 2. [sass-loader](https://github.com/webpack-contrib/sass-loader) Loads a Sass/SCSS file and compiles it to CSS
 3. [css-loader](https://github.com/webpack-contrib/css-loader) interprets `@import`/`url()` to js modules
 4. [postcss-loader](https://github.com/postcss/postcss-loader) to process CSS with [PostCSS](http://postcss.org/)
@@ -53,3 +53,16 @@ Webpack is the only tool used in this project for bundling project dependencies 
 2. [copy-webpack-plugin](https://github.com/webpack-contrib/copy-webpack-plugin) used to copy `index.html` to `dist` folder
 3. [extract-text-webpack-plugin](https://github.com/webpack-contrib/extract-text-webpack-plugin) extract final bundled css files to `dist` folder
 4. [svg-sprite-loader/plugin](https://github.com/kisenka/svg-sprite-loader) part of `svg-sprite-loader` to generate final `sprite.svg` in `dist`
+
+---
+
+## Editor recommendation:
+
+You can use any prefered editor, in case you are using [Atom](https://atom.io/) the following packages can help speed up your development process:
+
+* [react](https://atom.io/packages/react)
+* [linter-eslint](https://atom.io/packages/linter-eslint)
+* [flow-ide](https://atom.io/packages/flow-ide)
+
+
+
