@@ -4,6 +4,7 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
+const CompressionPlugin = require("compression-webpack-plugin")
 
 
 
@@ -103,6 +104,9 @@ module.exports = {
             filename: '/styles/style.css',
             allChunks: true
         }),
-        new SpriteLoaderPlugin()
+        new SpriteLoaderPlugin(),
+        new CompressionPlugin({
+          test: /\.js/m,
+        }),
     ],
 }
