@@ -11,7 +11,7 @@ React js boilerplate is to help you kick start your react web application, with 
 ## Setup:
 
 1. `yarn` or `npm install`
-2. `yarn start:dev` to build all files into `dist` folder and watch for any changes
+2. `yarn start:dev` to build and watch for changes, also a dev server will start on `http://localhost:8080/`
 
 #### Other scripts:
 1. `yarn json-server` to create test json api `http://localhost:3001/`
