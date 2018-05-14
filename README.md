@@ -6,15 +6,19 @@ React js boilerplate is to help you kick start your react web application, with 
 * [yarn](https://yarnpkg.com/en/) or [npm](https://www.npmjs.com/)
 * [Node.js](https://nodejs.org/en/)
 
+---
+
 ## Setup:
 
 1. `yarn` or `npm install`
-2. `yarn build:watch` to build all files into `dist` folder and watch for any changes
-3. `yarn start:server` to start node development server and host `dist` folder browse `http://localhost:8080/`
-4. `yarn json-server` to create test json api `http://localhost:3001/`
-5. `yarn lint` to run eslint on `src` folder and display code errors if any
-6. `yarn flow` to run flow
+2. `yarn start:dev` to build all files into `dist` folder and watch for any changes
 
+#### Other scripts:
+1. `yarn json-server` to create test json api `http://localhost:3001/`
+2. `yarn lint` to run eslint on `src` folder and display code errors if any
+3. `yarn flow` to run flow
+
+---
 
 ## Features:
 
