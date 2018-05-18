@@ -18,8 +18,8 @@ app.get('/*', function(req, res) {
 });
 
 
-app.listen(process.env.PORT || 8080, (error) => {
+app.listen(process.env.PORT || 3000, (error) => {
     if (!error) {
-        console.log(`📡  Running development server on port: ${process.env.PORT || 8080}`);
+        console.log(`📡  Running development server on port: ${process.env.PORT || 3000}`);
     }
 });

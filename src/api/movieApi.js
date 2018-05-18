@@ -1,6 +1,6 @@
 // @flow
 
-import { Request } from '../services';
+import { Request } from '../utils';
 
 
 const movieApi = {
