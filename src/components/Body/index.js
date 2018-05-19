@@ -2,7 +2,6 @@
 
 import * as React from 'react';
 import CSSModules from 'react-css-modules';
-// $FlowFixMe
 import style from './body.scss';
 
 type PropsType = {

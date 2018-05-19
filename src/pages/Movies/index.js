@@ -5,7 +5,6 @@ import CSSModules from 'react-css-modules';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { movieActions } from '../../actions';
-// $FlowFixMe
 import style from './movies.scss';
 
 type PropsType = {

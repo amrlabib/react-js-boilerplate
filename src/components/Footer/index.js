@@ -3,7 +3,6 @@
 import React from 'react';
 import CSSModules from 'react-css-modules';
 import star from '../../../assets/icons/star.svg';
-// $FlowFixMe
 import style from './footer.scss';
 
 const Footer = () => (
