@@ -16,6 +16,7 @@ class Request {
       url: `${config.apiUrl}${url}`,
       headers,
       data,
+      timeout: 5000,
     };
 
     return axios(reqObj)
@@ -24,7 +25,7 @@ class Request {
         Promise.resolve(res.data))
       .catch((error) => {
         const responseError = {};
-        responseError.code = 500;
+        responseError.code = 0;
         responseError.message = 'Something went wrong!';
 
         if (error.response) {
@@ -34,8 +35,7 @@ class Request {
             responseError.message = errMessage;
           }
         } else if (error.request) {
-          responseError.code = 404;
-          responseError.message = 'Not Found!';
+          //
         } else if (error.message) {
           responseError.message = error.message;
         }
