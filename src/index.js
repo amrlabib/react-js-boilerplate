@@ -8,9 +8,7 @@ import { createStore, applyMiddleware } from 'redux';
 import ReduxThunk from 'redux-thunk';
 import rootReducer from './reducers/';
 import Routes from './routes';
-import Header from './components/Header';
-import Body from './components/Body';
-import Footer from './components/Footer';
+import { Header, Body, Footer } from './components';
 import GlobalStyle from '../assets/styles/global.scss'; //eslint-disable-line
 
 
